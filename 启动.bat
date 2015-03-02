@@ -1,2 +1,2 @@
 cd ebin
-erl -sname mysql_node
+werl -sname mysql_node
