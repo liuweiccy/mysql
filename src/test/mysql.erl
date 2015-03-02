@@ -10,7 +10,7 @@
 -author("Administrator").
 
 %% API
--export([start/0, fectch/0, fetch/2, delete_all/1]).
+-export([start/0, fetch/0, fetch/2, delete_all/1]).
 
 start() ->
 	application:start(p1_mysql),
@@ -23,4 +23,4 @@ fetch(Id, Query) ->
 	p1_mysql:fetch(Id, Query).
 
 delete_all(Table) ->
-	fectch(1, "delete from " ++ Table).
+	fetch(1, "delete from " ++ Table).
